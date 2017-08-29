@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,h2,span,p,a{margin: 0;padding: 0}
+        #box{
+            width: 50%;
+            height: 130px;
+            border: 1px solid #eee;
+            border-top: 3px solid #c60;
+            position: relative;
+        }
+        #title{
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            color:blue;
+            font-size: 26px;
+            text-align: center;
+            margin: 20px auto;
+        }
+        #text{
+            width: 100%;
+            font-size: 16px;
+            text-align: center;
+        }
+        span{
+            color: skyblue;
+        }
+        a{
+            text-decoration: none;
+            color: #ccc;
+            margin-left: 25px;
+        }
+        input{
+            width: 28px;
+            height:40px;
+            background: #eee;
+            vertical-align: top;
+            outline: none;
+            margin:8px 0 0 5px;
+            position: absolute;
+            bottom:20px;
+        }
+        #but1{
+            margin-left: 20px;
+            right: 60px;
+        }
+        #but2{
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h2 id="title">国内油价迎年内最小降幅：92号汽油下跌0.07元/升</h2>
+        <p id="text">
+            <span>2015年 07月07日16:55 &nbsp;&nbsp;央视</span
+            ><a href="#">我有话说（31，881人参与）</a
+            ><a href="#">收藏本文</a>
+        </p>
+        <input type="button"value="A-" id="but1">
+        <input type="button" value="A+" id="but2">
+    </div>
+</body>
+</html>
+<script>
+     var oBox=document.getElementById("box");
+     var oTitle=document.getElementById("title");
+     var oText=document.getElementById("text");
+     var oBut1=document.getElementById("but1");
+     var oBut2=document.getElementById("but2");
+     var num1=16,num2=26;
+        oBut1.onclick=function () {
+         num1=num1-1;
+         num2=num2-1;
+         oTitle.style.fontSize=num2+"px";
+         oText.style.fontSize=num1+"px";
+     }
+     oBut2.onclick=function () {
+         num1=num1+1;
+         num2=num2+1;
+         oTitle.style.fontSize=num2+"px";
+         oText.style.fontSize=num1+"px";
+     }
+</script>

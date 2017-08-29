@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,div,a,img,i{margin: 0;padding: 0px}
+        #box{
+            width: 180px;
+            height: 188px;
+            border: 1px solid #eee;
+            margin: 100px auto;
+            text-align: center;
+            padding-top:12px ;
+            position: relative;
+        }
+        a{
+            text-decoration: none;
+            color: #c60;
+            height: 20px;
+            line-height: 20px;
+            font-size: 16px;
+
+        }
+        @font-face {
+            font-family: 'iconfont';
+            src: url('font/iconfont.eot');
+            src: url('font/iconfont.eot?#iefix') format('embedded-opentype'),
+            url('font/iconfont.woff') format('woff'),
+            url('font/iconfont.ttf') format('truetype'),
+            url('font/iconfont.svg#iconfont') format('svg');
+        }
+        .iconfont{
+            font-family:"iconfont" !important;
+            font-size:16px;font-style:normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+            position: absolute;
+            top: -1px;
+            left: -18px;
+            color: #c60;
+            border: 1px solid #eee;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <i id="icon" class="iconfont">&#xe60b;</i>
+        <a href="#">手机逛淘宝</a>
+        <img src="img/code.png" alt="">
+    </div>
+</body>
+</html>
+<script>
+    var oBox=document.getElementById("box");
+    var oIcon=document.getElementById("icon");
+        oIcon.onclick=function () {
+            oBox.style.display="none";
+        }
+</script>

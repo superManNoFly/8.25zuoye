@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,h2,span,p{margin: 0;padding: 0}
+        #title{
+            font-size: 16px;
+        }
+        p{
+            margin: 8px 0 0 110px;
+        }
+        span{
+            background: blue;
+            color: #000;
+            font-size: 12px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+        <h2 id="title">《蝶恋花-泪湿罗衣脂粉满》</h2>
+        <p id="box">
+            <span id="size16">16</span>
+            <span id="size18">18</span>
+            <span id="size26">26</span>
+        </p>
+</body>
+</html>
+<script>
+    var oBox=document.getElementById("box");
+    var oTitle=document.getElementById("title");
+    var oSize16=document.getElementById("size16");
+    var oSize18=document.getElementById("size18");
+    var oSize26=document.getElementById("size26");
+        oSize16.onclick=function () {
+            oTitle.style.fontSize="16px";
+        }
+        oSize18.onclick=function () {
+            oTitle.style.fontSize="18px";
+        }
+        oSize26.onclick=function () {
+            oTitle.style.fontSize="26px";
+        }
+</script>
